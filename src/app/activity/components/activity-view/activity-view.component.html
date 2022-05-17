@@ -1,0 +1,22 @@
+<header>
+  <div class="name">
+    <i-icon name="roundSquare" [style.color]="color"></i-icon>
+
+    <input
+      type="text"
+      placeholder="Activity"
+      [value]="name"
+      (input)="onNameInput($event)"
+    />
+  </div>
+
+  <div class="period">{{ period }}</div>
+</header>
+
+<section class="card statistics">
+  <header>Statistics</header>
+</section>
+
+<section class="card history">
+  <header>History</header>
+</section>

@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+
+*
+  box-sizing: border-box
+
+:root
+  --radius: 12px
+
+  --theme: #f8f8f8
+  --theme-accent: #fff
+  --theme-blur: #e8e8e8
+
+  --text-primary: #32383f
+  --text-secondary: #9b9a9d
+
+  --shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px
+
+html, body
+  height: 100%
+
+body
+  background: var(--theme)
+  color: var(--text-primary)
+  font-family: sans-serif
+  margin: 0
+  user-select: none
+
+.card
+  background: var(--theme-accent)
+  border-radius: var(--radius)
+  box-shadow: var(--shadow)
+  padding: 16px

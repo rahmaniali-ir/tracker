@@ -1,0 +1,40 @@
+
+:host
+  display: block
+  padding: 100px
+
+  > header
+    .name
+      align-items: center
+      display: flex
+      margin: 0 0 8px
+
+      i-icon
+        --size: 24px
+        color: var(--text-secondary)
+        margin-inline-end: 8px
+
+      input
+        all: unset
+
+        display: block
+        font-size: 32px
+        font-weight: bold
+        text-transform: capitalize
+        width: 100%
+
+        &::placeholder
+          color: var(--text-secondary)
+
+        &::selection 
+          background: var(--theme-blur)
+
+    .period
+      color: var(--text-secondary)
+
+.card
+  margin-top: 24px
+
+  header
+    font-weight: bold
+    margin-bottom: 16px

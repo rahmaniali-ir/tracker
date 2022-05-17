@@ -1,0 +1,10 @@
+<main>
+  <button>Brief</button>
+
+  <activity-card
+    *ngFor="let activity of activities"
+    [activity]="activity"
+  ></activity-card>
+
+  <button (click)="addActivity()">Add activity</button>
+</main>
