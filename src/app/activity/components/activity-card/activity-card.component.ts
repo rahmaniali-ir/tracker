@@ -16,7 +16,7 @@ export class ActivityCardComponent implements OnInit {
     id: '',
     name: '',
     period: ActivityPeriod.Daily,
-    repetitions: 0,
+    repetition: 0,
     color: '',
   };
 
@@ -32,8 +32,8 @@ export class ActivityCardComponent implements OnInit {
     return this.activity.name || 'Activity';
   }
 
-  get period() {
-    return activityPeriodName[this.activity.period];
+  get repetition() {
+    return this.activity.repetition;
   }
 
   @HostListener('click')

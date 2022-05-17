@@ -1,6 +1,6 @@
 <header [class.empty]="!hasName" [style.color]="activity.color">
   <i-icon name="roundSquare"></i-icon>
-  <span>{{ name }}</span>
-</header>
+  <span class="name">{{ name }}</span>
 
-<footer>{{ period }}</footer>
+  <span class="count">0/{{ repetition }}</span>
+</header>

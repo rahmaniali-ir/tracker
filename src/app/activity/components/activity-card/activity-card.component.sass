@@ -14,10 +14,14 @@
         color: inherit
         transform: scale(1.2)
 
+      span
+        color: var(--text-primary)
+        opacity: 1
+
 header
+  align-items: center
   display: flex
   font-weight: bold
-  margin-bottom: 8px
   text-transform: capitalize
 
   &.empty span
@@ -28,8 +32,15 @@ header
     margin-inline-end: 8px
 
   span
-    color: var(--text-primary)
+    color: var(--text-secondary)
+    transition: all .3s ease
 
-footer
-  color: var(--text-secondary)
-  font-size: 14px
+    &.count
+      background: var(--theme-blur)
+      border-radius: 6px
+      color: var(--text-secondary) !important
+      font-family: monospace
+      font-size: 8px
+      opacity: .5
+      margin-inline-start: auto
+      padding: 4px 6px

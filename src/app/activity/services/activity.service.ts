@@ -10,28 +10,28 @@ export class ActivityService {
       id: '1',
       name: 'Activity 1',
       period: ActivityPeriod.Daily,
-      repetitions: 1,
+      repetition: 1,
       color: '#fe3e26',
     },
     '2': {
       id: '2',
       name: 'Activity 2',
       period: ActivityPeriod.Weekly,
-      repetitions: 2,
+      repetition: 2,
       color: '#3de1ff',
     },
     '3': {
       id: '3',
       name: 'Activity 3',
       period: ActivityPeriod.Weekly,
-      repetitions: 2,
+      repetition: 3,
       color: '#57f098',
     },
     '4': {
       id: '4',
       name: 'Activity 4',
-      period: ActivityPeriod.Weekly,
-      repetitions: 2,
+      period: ActivityPeriod.Monthly,
+      repetition: 2,
       color: '#f7be26',
     },
   };
@@ -50,7 +50,7 @@ export class ActivityService {
       name: '',
       color: 'var(--text-secondary)',
       period: ActivityPeriod.Daily,
-      repetitions: 0,
+      repetition: 0,
     };
   }
 }

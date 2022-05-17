@@ -10,7 +10,7 @@ export const activityPeriodName = ['Daily', 'Weekly', 'Monthly', 'Yearly'];
 export interface Activity {
   id: string;
   name: string;
-  repetitions: number;
+  repetition: number;
   period: ActivityPeriod;
   color: string;
 }

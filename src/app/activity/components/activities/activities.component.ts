@@ -13,9 +13,7 @@ export class ActivitiesComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit(): void {
-    console.log(this.route.root.snapshot.url);
-  }
+  ngOnInit(): void {}
 
   get activities() {
     return this.activityService.activitiesArray;
