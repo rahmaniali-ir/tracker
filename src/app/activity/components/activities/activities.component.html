@@ -2,7 +2,7 @@
   <button>Brief</button>
 
   <activity-card
-    *ngFor="let activity of activities"
+    *ngFor="let activity of activities; let index = index"
     [activity]="activity"
   ></activity-card>
 
